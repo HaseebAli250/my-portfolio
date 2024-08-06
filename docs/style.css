@@ -181,3 +181,96 @@ footer .socials a {
     font-size: 1.5rem;
     text-decoration: none;
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .menu {
+        margin-top: 1rem;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    nav .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .menu ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    form textarea {
+        height: 120px;
+    }
+
+    footer .socials {
+        margin-top: 0.5rem;
+    }
+
+    footer .socials a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    nav .menu ul li {
+        margin: 0.2rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
