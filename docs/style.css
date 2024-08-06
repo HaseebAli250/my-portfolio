@@ -7,148 +7,177 @@
 
 body {
     line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: url('header-bg.jpg') no-repeat center center/cover;
+    background: #333;
     color: #fff;
-    height: 100vh;
+    padding: 1rem 0;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    flex: 1;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+nav .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav .menu ul li {
+    margin-left: 2rem;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-header h1 {
+.hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-header p {
+.hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .btn {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-#services {
+section {
     padding: 2rem 0;
-    background: #f4f4f4;
 }
 
-#services h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.service {
+#services, #portfolio, #about, #contact {
     background: #fff;
-    margin: 1rem;
-    padding: 1.5rem;
+    margin: 1rem 0;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
-#portfolio {
-    padding: 2rem 0;
+#services h2, #portfolio h2, #about h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-#portfolio h2 {
+.service, .portfolio-item {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
+}
+
+.service i, .portfolio-item img {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
-    background: #fff;
-    margin: 1rem;
-    padding: 1.5rem;
+    width: 300px;
+    background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .portfolio-item img {
-    max-width: 100%;
-    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
 }
 
-#testimonials {
-    background: #f4f4f4;
-    padding: 2rem 0;
-}
-
-#testimonials h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.testimonial {
-    background: #fff;
-    margin: 1rem;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-#contact {
-    padding: 2rem 0;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+.portfolio-info {
+    padding: 1rem;
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-form label {
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
     display: block;
     margin-bottom: 0.5rem;
 }
 
-form input,
-form textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 0.5rem;
-    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+form textarea {
+    height: 150px;
 }
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    position: relative;
 }
 
+footer .socials {
+    margin-top: 1rem;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
